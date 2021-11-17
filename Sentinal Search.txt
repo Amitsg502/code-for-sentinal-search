@@ -1,0 +1,21 @@
+print("Sentinel Search.....")
+n = [1,2,3,4,5,44,55,30]
+print(n)
+len = len(n)
+print(len)
+
+key = 30
+last = n[len-1]
+n[len-1] = key
+print(last)
+print(n)
+
+i = 0
+while(n[i]!=key):
+    i=i+1
+    
+n[len-1] = last
+if((i<len-1) or (key==n[len-1])):
+    print("key found at location:" , i)
+else:
+    print("key not found.....")
